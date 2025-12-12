@@ -47,10 +47,10 @@ Start Tomcat:Bash# Navigate to Tomcat bin directory
 cd /path/to/tomcat/bin
 ./startup.sh   # Linux/Mac
 # or startup.bat on Windows
-Tomcat will automatically deploy the app as http://localhost:8080/CRUD/
+Tomcat will automatically deploy the app as http://localhost:8080/
 
 3. Access the Application
-   Open in browser: http://localhost:8080/CRUD/
+   Open in browser: http://localhost:8080/
    Start adding and managing staff!
    Project Structure
    textsrc/
