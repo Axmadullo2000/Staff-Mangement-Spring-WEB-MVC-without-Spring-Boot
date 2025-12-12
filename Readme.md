@@ -1,73 +1,78 @@
-Staff Management CRUD Application 📋
-A simple CRUD web application for managing staff members, built with pure Spring MVC (no Spring Boot), Thymeleaf for server-side templating, and an in-memory repository. This project demonstrates classic Spring MVC configuration and is packaged as a WAR for deployment on a servlet container like Apache Tomcat.
-Ideal for learning core Spring MVC concepts without the conveniences of Spring Boot!
-Features ✨
+Markdown# 🌟 Staff Management CRUD App
 
-Add new staff (First Name, Last Name, Email)
-View all staff in a responsive table
-Update existing staff details
-Delete staff with confirmation
-Modern, mobile-friendly UI powered by Bootstrap 5 and Bootstrap Icons
-In-memory storage (data resets on restart)
+[![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk)](https://openjdk.org/)
+[![Spring MVC](https://img.shields.io/badge/Spring%20MVC-6.0-6DB33F?style=for-the-badge&logo=spring)](https://spring.io/projects/spring-framework)
+[![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.1-005F0F?style=for-the-badge&logo=thymeleaf)](https://www.thymeleaf.org/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com/)
+[![Maven](https://img.shields.io/badge/Maven-3-C71A2B?style=for-the-badge&logo=apache-maven)](https://maven.apache.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-Screenshots 📸
-(Add screenshots of your app here for better visualization on GitHub)
+Простое и элегантное **CRUD-приложение** для управления сотрудниками. Построено на **чистом Spring MVC** (без Spring Boot), с серверным рендерингом через **Thymeleaf** и красивым интерфейсом на **Bootstrap 5**.
 
-Home page: screenshots/index.png
-Update page: screenshots/update.png
+Идеально для изучения классического Spring MVC или как база для enterprise-проектов!
 
-Example Views
-Tech Stack 🛠️
+## 🚀 Возможности
 
-Framework: Spring MVC 6.x (Spring 7.0.1)
-Templating: Thymeleaf 3.1.3
-View Styling: Bootstrap 5 (via CDN), Bootstrap Icons
-Data Storage: In-memory ArrayList (custom repository)
-Build Tool: Maven
-Java Version: 17
-Packaging: WAR (for external servlet container)
-Annotations Processor: Lombok (optional, for reducing boilerplate)
+- ➕ Добавление новых сотрудников
+- 👀 Просмотр списка в responsive таблице
+- ✏️ Редактирование данных
+- 🗑️ Удаление с подтверждением
+- 📱 Адаптивный дизайн (мобильные устройства)
+- 💾 In-memory хранилище (легко заменить на БД)
 
-Prerequisites 📋
+## 📸 Скриншоты
 
-Java 17 or higher
-Maven 3.8+
-Apache Tomcat 10+ (or any Jakarta EE 9+ compatible servlet container)
-Download from: https://tomcat.apache.org/
+![Главная страница](screenshots/index.png)
+*Список сотрудников + форма добавления*
 
+![Страница обновления](screenshots/update.png)
+*Чистая форма редактирования*
 
-Build & Deploy 🚀
-1. Build the WAR file
-   Bashmvn clean package
-   This generates target/CRUD.war
-2. Deploy to Tomcat
+*(Добавьте реальные скриншоты в папку `screenshots/` для максимального эффекта!)*
 
-Copy target/CRUD.war to your Tomcat's webapps directory.
-Start Tomcat:Bash# Navigate to Tomcat bin directory
-cd /path/to/tomcat/bin
-./startup.sh   # Linux/Mac
-# or startup.bat on Windows
-Tomcat will automatically deploy the app as http://localhost:8080/CRUD/
+## 🛠️ Технологии
 
-3. Access the Application
-   Open in browser: http://localhost:8080/CRUD/
-   Start adding and managing staff!
-   Project Structure
-   textsrc/
-   ├── main/
-   │   ├── java/com.pdp/          # Controllers, Entities, Repository, Config
-   │   ├── resources/templates/   # Thymeleaf HTML files (index.html, update.html)
-   │   └── webapp/WEB-INF/        # Optional web.xml (not needed for Servlet 3+)
-   pom.xml                        # Dependencies and build config
-   Future Improvements 💡
+| Технология       | Версия    | Описание                          |
+|------------------|-----------|-----------------------------------|
+| Java             | 17        | Основной язык                     |
+| Spring Framework | 6.0+     | MVC, Context                      |
+| Thymeleaf        | 3.1.3    | Шаблоны HTML                      |
+| Bootstrap 5      | CDN      | Стили и responsive дизайн         |
+| Lombok           | 1.18+    | Уменьшение boilerplate            |
+| Maven            | 3.8+     | Сборка и зависимости              |
 
-Replace in-memory repo with Spring Data JPA + H2/MySQL database
-Add form validation (Bean Validation)
-Integrate Spring Security
-Migrate to Spring Boot for embedded server and auto-configuration
+## 📦 Установка и запуск
 
-Contributing 🤝
-Contributions are welcome! Fork, create a branch, commit changes, and open a Pull Request.
-License 📄
-MIT License – feel free to use and modify!
-Made with ❤️ using classic Spring MVC. Star ⭐ if helpful!
+### Требования
+- Java 17+
+- Maven 3.8+
+- Apache Tomcat 10+ (Jakarta EE 9+)
+
+### Шаги
+1. **Соберите WAR-файл**
+   ```bash
+   mvn clean package
+→ Получите target/CRUD.war
+
+Разверните на Tomcat
+Скопируйте CRUD.war в webapps/ Tomcat
+Запустите Tomcat:Bashcd /path/to/tomcat/bin
+./startup.sh  # или startup.bat на Windows
+
+Откройте приложение
+→ http://localhost:8080/CRUD/
+
+🔮 Будущие улучшения
+
+Подключить Spring Data JPA + H2/MySQL
+Добавить валидацию форм (@Valid)
+Интегрировать Spring Security
+Перейти на Spring Boot для embedded сервера
+
+🤝 Вклад в проект
+Любые pull request'ы приветствуются! Форкните, создайте ветку и отправьте PR.
+📄 Лицензия
+MIT License — используйте свободно!
+
+⭐ Понравилось? Поставьте звезду! ⭐
+Сделано с ❤️ для изучения Spring MVC
