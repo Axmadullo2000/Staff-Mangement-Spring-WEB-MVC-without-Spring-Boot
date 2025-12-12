@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="CRUD">
+    <output-path>$PROJECT_DIR$/out/artifacts/CRUD</output-path>
+    <root id="root">
+      <element id="archive" name="CRUD.jar">
+        <element id="module-output" name="CRUD" />
+      </element>
+    </root>
+  </artifact>
+</component>
