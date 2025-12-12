@@ -60,7 +60,7 @@ Markdown# 🌟 Staff Management CRUD App
 ./startup.sh  # или startup.bat на Windows
 
 Откройте приложение
-→ http://localhost:8080/CRUD/
+→ http://localhost:8080/
 
 🔮 Будущие улучшения
 
