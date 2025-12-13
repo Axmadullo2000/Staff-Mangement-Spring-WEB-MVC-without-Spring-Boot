@@ -1,18 +1,16 @@
 package com.pdp.repository;
 
-import com.pdp.entity.Staff;
+import com.pdp.dto.StaffDTO;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface StaffRepo {
-    void save(Staff staff);
+    void save(String id, StaffDTO staffDTO);
 
-    void update(Staff staff);
+    List<StaffDTO> findAll();
 
-    List<Staff> findAll();
-
-    Optional<Staff> findById(String id);
+    Optional<StaffDTO> findById(String id);
 
     void deleteById(String id);
 }

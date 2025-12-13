@@ -1,10 +1,13 @@
-package com.pdp;
+package com.pdp.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.pdp.service")
+@ComponentScan(basePackages = {
+        "com.pdp.service",
+        "com.pdp.repository"
+})
 public class AppConfig {
 
 }
